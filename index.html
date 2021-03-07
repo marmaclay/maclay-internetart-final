@@ -26,6 +26,7 @@
         border-color: black;
         text-align: center;
       }
+
       button:hover {
         background-color: #BECEDC;
         cursor: pointer;
@@ -38,16 +39,13 @@
     <h1>
       please use headphones to view this website
     </h1>
-    <button>
-      <a href="https://wikipedia.org">im wondering something...</a>
-    </button>
     <p>
-    <iframe id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="300"
-    height="200"
-    src="http://wikipedia.org">
-    </iframe>
+      <button onclick="myFunction()">im wondering something...</button>
+      <script>
+        function myFunction() {
+          window.open("http://wikipedia.org");
+        }
+      </script>
     </p>
   </body>
 </html>
