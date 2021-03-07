@@ -48,6 +48,21 @@
         transform: translate(-50%, -50%);
       }
 
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        max-width: 10px;
+        margin: 0 auto;
+      }
+
+      .gallery>div {
+        width: 200px;
+        height: 200px;
+        background-position: left top;
+        background-size: cover;
+      }
+
       @keyframes clickme {
         0% {
           background-color: #6399C8;
@@ -81,14 +96,59 @@
       const btn = document.querySelector('button');
 
       function start() {
-        const pic = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/220px-Wikipedia_Logo_1.0.png"
+        let pic = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/220px-Wikipedia_Logo_1.0.png"
         document.getElementById('wiki').src = pic.replace('20x20', '40x40');
         document.getElementById('wiki').style.display = 'block';
+        document.getElementById('wiki').style = "border:3px solid transparent";
+
       }
 
       btn.onclick = start;
     </script>
-    <img id="wiki" src="wiki" style="display:none;">
-    </p>
+    <img id="wiki" src="wiki" style="display:none" alt="wikipedia;">
+
+    <section class="gallery">
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+      <button> X </button>
+</section>
+      </p>
   </body>
 </html>
