@@ -6,7 +6,7 @@
     <style>
       body {
         background-color: #6399C8;
-        animation: clickme 40s 1;
+        animation: clickme 40s 0;
         background-attachment: fixed;
         background-size: cover;
       }
@@ -29,7 +29,7 @@
       }
 
       button:hover {
-        background-color: #BECEDC;
+        background-color: #548ABA;
         cursor: pointer;
       }
 
@@ -75,9 +75,20 @@
         <button>im wondering something...</button>
       </div>
     </div>
-    </p>
+    <div class="hidden">
+    </div>
     <script type="text/javascript">
+      const btn = document.querySelector('button');
 
+      function random(number) {
+        return Math.floor(Math.random() * (number + 1));
+      }
+
+      btn.onclick = function() {
+        const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+      }
     </script>
+  </p>
   </body>
 </html>
