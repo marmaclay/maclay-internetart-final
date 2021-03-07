@@ -80,15 +80,15 @@
     <script type="text/javascript">
       const btn = document.querySelector('button');
 
-      function random(number) {
-        return Math.floor(Math.random() * (number + 1));
-      }
+      function start () {
+        const pic = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wikipedia-logo-v2-en.svg/1200px-Wikipedia-logo-v2-en.svg.png"
+        document.getElementById('wiki').src = pic.replace('90x90', '225x225');
+          }
 
-      btn.onclick = function() {
-        const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-        document.body.style.backgroundColor = rndCol;
-      }
+      btn.onclick = start;
+    
     </script>
+    <img id="wiki" src="wiki">
   </p>
   </body>
 </html>
