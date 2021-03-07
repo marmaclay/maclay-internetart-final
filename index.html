@@ -6,6 +6,7 @@
     <style>
       body {
         background-color: #6399C8;
+        animation: clickme 40s 1;
         background-attachment: fixed;
         background-size: cover;
       }
@@ -49,25 +50,16 @@
 
       @keyframes clickme {
         0% {
-          background-color: red;
+          background-color: #6399C8;
         }
 
         50% {
-          background-color: yellow;
+          background-color: grey;
         }
 
         100% {
-          background-color: red;
+          background-color: #6399C8;
         }
-      }
-
-      div {
-        width: 1700px;
-        height: 150px;
-        background-color: red;
-        animation-name: clickme;
-        animation-duration: 10s;
-
       }
     </style>
     <meta charset="utf-8">
