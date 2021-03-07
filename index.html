@@ -31,6 +31,21 @@
         background-color: #BECEDC;
         cursor: pointer;
       }
+
+      .container {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     </style>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -40,12 +55,14 @@
       please use headphones to view this website
     </h1>
     <p>
-      <button onclick="myFunction()">im wondering something...</button>
-      <script>
-        function myFunction() {
-          window.open("http://wikipedia.org");
-        }
-      </script>
+    <div class="container">
+      <div class="center">
+        <button onclick="return popup(this, 'notes')">im wondering something...</button>
+        <script>
+
+        </script>
+      </div>
+    </div>
     </p>
   </body>
 </html>
